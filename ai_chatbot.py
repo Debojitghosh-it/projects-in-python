@@ -1,7 +1,7 @@
 import streamlit as s
 import google.generativeai as genai
 
-key = "AIzaSyDnUN5UNLHCeV_uu2xa90v84IEBIKDe84Q"
+key = ""
 genai.configure(api_key=key)
 model = genai.GenerativeModel("gemini-2.5-flash")
 
@@ -48,3 +48,4 @@ for role, msg in s.session_state.chat:
         with s.chat_message("assistant",avatar = "🤖"):
             s.write(msg)
     
+
